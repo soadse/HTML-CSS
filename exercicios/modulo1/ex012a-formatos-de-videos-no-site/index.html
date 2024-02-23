@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+    <style>
+        .container1{
+            width: 50%;
+            border: solid 3px;
+        }
+        .container2{
+            width: 50%;
+            border: solid 3px;
+        }
+        .container3{
+            width: 50%;
+            border: solid 3px;
+        }
+        .container4{
+            width: 50%;
+            border: solid 3px;
+        }
+        .container5{
+            width: 50%;
+            border: solid 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video controls width="100%" poster="imagens/cabra.png" autoplay loop>
+        <source src="midias/Meu-Video.mp4" type="video/mp4">
+        <source src="midias/Meu-Video.mkv" type="video/mp4">
+        <source src="midias/Meu-Video.webm" type="video/webm">
+        <!-- <source src="midias/meu-video.ogv" type="video/ogg"> -->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <div class="container1">
+        <h1 style="text-align: center;">Full</h1>
+        <video src="midias/meu-video-full.mp4" controls width="100%"></video>
+    </div>
+    <br>
+    <div class="container2">
+        <h1 style="text-align: center;">MKV</h1>
+        <video src="midias/Meu-Video.mkv" controls width="100%"></video>
+    </div>
+    <br>
+    <div class="container3">
+        <h1 style="text-align: center;">MP4</h1>
+        <video src="midias/Meu-Video.mp4" controls width="100%"></video>
+    </div>
+    <br>
+    <div class="container4">
+        <h1 style="text-align: center;">Webm</h1>
+        <video src="midias/Meu-Video.webm" controls width="100%"></video>
+    </div>
+    <br>
+    <!-- <div class="container5"> 
+        <h1 style="text-align: center;">OGV</h1>
+        <video src="midias/meu-video.ogv" controls width="100%"></video>
+    </div> tive que tirar este video pq o formato dele (tamanho) não estava entrando no GitHub-->
+</body>
+</html>

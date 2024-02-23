@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+h1{
+    text-align: center;
+}
+#cor{
+    display: flex;
+    justify-content: center;
+}
+#cor img{
+    width: auto;
+    border-radius: 10px;
+}
+#cat{
+    display: flex;
+    justify-content: center;
+}
+#cat img{
+    border-radius: 50%;
+}
+#eu{
+    display: flex;
+    justify-content: center;
+}
+#eu img{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/c2/7b/28/c27b289b7ed753eb5e863ff52bd300bc.jpg);
+}
+a{
+    color: black;
+}
+button{
+    border: solid 1px;
+    border-radius: 10%;
+}
