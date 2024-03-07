@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -27,12 +27,20 @@
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus itaque facere soluta? Possimus ea eius dolore maxime enim harum quos accusantium debitis consequatur ullam iste, rem quidem hic deleniti nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, unde id est porro reprehenderit quaerat dicta impedit pariatur et repellendus incidunt aperiam eveniet enim inventore minima asperiores aliquid voluptatem totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit libero tenetur amet ad, quo quod quibusdam aspernatur consequatur est asperiores pariatur consectetur? Atque facere beatae tenetur adipisci expedita accusamus ipsa?</p>
 
+            <h3>Testando Media Queries</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur quibusdam ut. Praesentium ab, aspernatur sed et optio qui dignissimos quidem quas velit at veniam eveniet assumenda! Hic, autem alias?</p>
 
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, dolor! Iure, vero ullam, voluptates officia facere, excepturi aut dignissimos ex consectetur nobis iste culpa repellendus! Ratione commodi quo a dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum earum magni, quibusdam modi quisquam odit totam tenetur esse impedit. Repellendus saepe cumque nemo atque molestias quibusdam quae sequi tenetur quasi.</p>
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 481) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
