@@ -25,15 +25,15 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 #login > #imagem {
     display: block;
@@ -48,12 +48,77 @@ main {
     display: block;
     padding: 10px;
 }
-#login > #formulario > h1 {
+#formulario > h1 {
     text-align: center;
+    margin-bottom: 10px;
 }
-#login > #formulario > p {
+#formulario > p {
     text-align: justify;
+    font-size: 0.8em;
 }
-#login > #formulario > form {
-
+form > .campo {
+    background-color: var(--cor02);
+    border: 2px solid var(--cor02);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+.campo > label {
+    display: none;
+}
+.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo > input {
+    background-color: rgb(186, 219, 217);
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: none;
+    padding: 4px;
+    border-radius: 8px;
+    transform: translateY(-13px);
+}
+.campo > input:focus-within {
+    background-color: white;
+}
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor01);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover {
+    background-color: #337573; 
+}
+form > .botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: var(--cor01);
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+form > .botao > span {
+    font-size: 0.8em;
+}
+form > .botao:hover {
+    background-color: #337573;
+    color: white;
 }

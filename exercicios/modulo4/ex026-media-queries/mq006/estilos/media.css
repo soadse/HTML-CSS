@@ -19,15 +19,21 @@ Extra large screens, TV – 1367px, and more
     }
     #login {
         width: 90vw;
+        height: 350px;
     }
     #login > #imagem {
         float: left;
         width: 30%;
         height: 100%;
+        transition: all .5s;
     }
     #login > #formulario {
         float: right;
         width: 70%;
+    }
+    #formulario > p {
+        font-size: 1.2em;
+        margin: 10px 0px;
     }
 }
 @media screen and (min-width:993px) {
@@ -36,15 +42,24 @@ Extra large screens, TV – 1367px, and more
     }
     #login {
         width: 992px;
+        height: 350px;
     }
     #login > #imagem {
-        transition: all .5s;
         float: left;
         width: 50%;
         height: 100%;
+        transition: all .5s;
     }
     #login > #formulario {
         float: right;
         width: 50%;
     }
+    #formulario > h1 {
+        font-size: 2em;
+    }
+    #formulario > p {
+        font-size: 1.2em;
+        margin: 10px 0px;
+    }
+    
 }
