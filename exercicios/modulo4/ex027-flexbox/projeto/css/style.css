@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+ul, nav{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover {opacity: 1;}
+
+
+header {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+header img {
+    width: 200px;
+}
+header nav {
+    display: flex;
+}
+header li {
+    margin: 0px 15px;
+}
+header li:first-child {
+    margin-left: 0px;
+}
+header li:last-child {
+    margin-right: 0px;
+}
+header li > a {
+    color: #191c03; 
+    font-weight: bolder; 
+}
+header li > a:hover {
+    color: gray;
+}
+@media (max-width:700px) {
+    header {flex-direction: column;}
+    header img { margin-bottom: 15px;}
+}
+.hero {
+    background-image: url(../imagens/pexels-pixabay-147411.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+.hero h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.hero .btn {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #191c03;
+    padding: 20px 50px;
+}
+@media (max-width:700px) {
+    header {flex-direction: column;}
+    .hero h1 {font-size: 2em;}
+    .hero .btn {
+        padding: 10px 25px;
+    }
+    header img { margin-bottom: 15px;
+    transition: all 1s;}
+}
+.conheca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+#conheca  h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+#conheca p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+#conheca hr {
+    display: flex;
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+    border: none;
+    
+}
+#conheca .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#conheca .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+#conheca .grid li.img01 {
+    flex-basis: 40%;
+}
+#conheca .grid li.img02 {
+    flex-basis: 60%;
+}
+#conheca .grid li.img03 {
+    flex-basis: 60%;
+}
+#conheca .grid li.img04 {
+    flex-basis: 40%;
+}
+@media (max-width:700px) {
+    #conheca .grid li.img01, #conheca .grid li.img02, #conheca .grid li.img03, #conheca .grid li.img04 {
+        flex-basis: 100%;
+    }
+}

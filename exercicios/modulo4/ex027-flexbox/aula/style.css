@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.container {
+    display: flex;
+    flex-direction: row; /* alinha tento em coluna como em linhas*/
+    flex-wrap: nowrap; /* permite ou nao a quebra de linhas*/
+    justify-content: flex-start; /* alinha na horizontal*/
+    align-content: stretch; /* alinha na vertical*/
+    background-color: #ccc;
+    height: 500px;
+}
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    font-weight: bolder;
+    width: 30px;
+    height: 30px;
+
+    flex-grow: 1;
+}
+.item:hover {
+    background-color: gray;
+    color: #333;
+    font-weight: bolder;
+}
+
+.article-01 { order: 3; flex-grow: 3;}
+.article-02 { order: 1; align-self: center;}
+.article-03 { order: 2; flex-basis: 20px;}
+.article-04 { order: 4; flex-shrink: 3;}
